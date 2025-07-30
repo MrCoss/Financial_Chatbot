@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GFC Financial Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      max-width: 550px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .response {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #ecf6ff;
+      border-left: 5px solid #007bff;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #2c3e50;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+    }
+
+    footer span {
+      font-weight: bold;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GFC Financial Chatbot</h1>
+    <form method="post">
+      <label for="user_query">Enter your financial question:</label><br />
+      <textarea name="user_query" rows="4" required>{{ user_query }}</textarea><br />
+      <input type="submit" value="Ask" />
+    </form>
+
+    {% if response %}
+    <div class="response">
+      <strong>Chatbot:</strong> {{ response }}
+    </div>
+    {% endif %}
+
+    <footer>
+      © 2025 <span>GFC</span> | Powered by <span>BCG AI Insights</span>
+    </footer>
+  </div>
+</body>
+</html>

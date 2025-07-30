@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code settings
+.vscode/
+
+# Jupyter notebook checkpoints (if any used later)
+.ipynb_checkpoints/
+
+# Logs and system files
+*.log
+
+# Flask cache / temp files
+instance/
+*.db
+*.sqlite3
+
+# Python packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# CSV or data dumps (optional – keep if you're versioning data)
+data/*.csv
+!data/final_financial_data.csv  # Keep this one if it's needed
+
+# Test coverage reports
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# Pytest
+.pytest_cache/
+
+# Static build artifacts (optional for future front-end)
+staticfiles/
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
