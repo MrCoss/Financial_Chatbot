@@ -6,6 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight, AI-powered financial chatbot developed using **Python** and **Flask**. This application provides a simple, conversational interface for users to query predefined financial data for major tech companies, demonstrating a practical application of data-driven web development.
+<img width="917" height="687" alt="image" src="https://github.com/user-attachments/assets/9b7cd600-d90f-41f8-9c04-4e788d8751c4" />
 
 
 
